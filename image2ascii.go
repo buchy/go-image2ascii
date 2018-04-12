@@ -4,12 +4,12 @@ import (
 	"image"
 )
 
-type lumAsciiMap struct {
+type LumAsciiMap struct {
 	luminance float64
 	ascii     byte
 }
 
-var conf = []lumAsciiMap{
+var conf = []LumAsciiMap{
 	{0.0, '@'},
 	{0.1, 'X'},
 	{0.2, '%'},
@@ -27,7 +27,7 @@ var conf = []lumAsciiMap{
 	{1.0, ' '},
 }
 
-func SetConf(userConf []lumAsciiMap) {
+func SetConf(userConf []LumAsciiMap) {
 	conf = userConf
 }
 

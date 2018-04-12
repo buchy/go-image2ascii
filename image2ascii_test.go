@@ -11,7 +11,7 @@ func BenchmarkConvert(b *testing.B) {
 }
 
 func TestConvert(t *testing.T) {
-	SetConf([]lumAsciiMap{
+	SetConf([]LumAsciiMap{
 		{0.0, 'a'},
 		{0.1, 'b'},
 		{0.2, 'c'},
