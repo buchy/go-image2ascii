@@ -5,8 +5,8 @@ import (
 )
 
 type LumAsciiMap struct {
-	luminance float64
-	ascii     byte
+	Luminance float64
+	Ascii     byte
 }
 
 var conf = []LumAsciiMap{
@@ -49,8 +49,8 @@ func pix2ascii(pix uint8) byte {
 	luminance := float64(pix) / 255
 	var ascii byte
 	for _, v := range conf {
-		if v.luminance <= luminance {
-			ascii = v.ascii
+		if v.Luminance <= luminance {
+			ascii = v.Ascii
 		}
 	}
 	return ascii
